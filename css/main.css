@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/*메인페이지 공통*/
+h3 {
+  display: none;
+}
+.container {
+  padding: 100px 140px;
+}
+section h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5625rem;
+  color: #ed0f0f;
+  margin-bottom: 80px;
+  text-align: center;
+}
+button {
+  background: transparent;
+}
+/*메인비주얼*/
+.visual {
+  height: 785px;
+  overflow: hidden;
+  margin-top: 80px;
+  position:relative;
+  top: 0;
+  left: 0;
+}
+
+.visual .bg-wrap{
+  position: relative;
+  max-width: 100%;
+  height: 785px;
+}
+
+.fade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease; 
+}
+
+.fade.on{
+  opacity: 1;
+  display: block;
+}
+
+.visual h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  line-height: 785px;
+  margin-bottom: 0;
+}
+.visual .text h2 span {
+  color: #ed0f0f;
+}
+/*인기상품*/
+.item .container {
+  margin-top: 120px;
+}
+
+.item article {
+  display: flex;
+  justify-content: center;
+}
+.item h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5625rem;
+  color: #ed0f0f;
+}
+.item article .wrap {
+  width: 536px;
+  height: 365px;
+  margin-right: 16px;
+}
+.item article .wrap:last-child {
+  margin-right: 0;
+}
+.item .text-area {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: left;
+}
+.item .text-area .product {
+  display: flex;
+  padding-top: 95px;
+}
+.item .text-area .product p:first-child {
+  font-size: 1.25rem;
+  color: #9f9ea8;
+  padding-bottom: 14px;
+}
+.item .text-area .product p:nth-child(2) {
+  width: 58px;
+  height: 28px;
+  font-size: 0.875rem;
+  line-height: 22px;
+  text-align: center;
+  color: #ba0b0b;
+  border-radius: 14px;
+  border: 2px solid #ba0b0b;
+  margin-left: 5px;
+}
+.item .text-area .text {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+.item .go {
+  display: flex;
+  padding-top: 80px;
+}
+.item .go a {
+  display: block;
+  font-size: 1.5625rem;
+  color: #a1a1a3;
+}
+.item .go a:hover {
+  opacity: 0.7;
+}
+.item .go button {
+  border: 0;
+  background-color: transparent;
+}
+.item .img {
+  padding: 12px 136px;
+}
+.item .img img {
+  margin-bottom: 20px;
+}
+.item article .scope {
+  text-align: left;
+}
+.item article .scope img {
+  padding-top: 95px;
+}
+.item article .scope p:first-of-type {
+  font-size: 1.875rem;
+  font-weight: 500;
+  padding: 20px 0 30px;
+}
+.item article .scope p:last-of-type {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+/* 인기상품 인디게이터 */
+.item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+  display: none; 
+}
+
+.slide.active {
+  display: flex; 
+}
+
+.indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #333;
+}
+
+
+
+/*리뷰*/
+.review {
+  display: flex;
+  justify-content: center;
+}
+.review .container {
+  background: linear-gradient(#f9f9f9, #d8d8d8);
+}
+.review .go {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.review .go a {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6f6e75;
+}
+.review .go button {
+  border: 0;
+}
+.review .arti-wrap {
+  display: flex;
+  position: relative;
+}
+.review .arti-wrap article {
+  width: 536px;
+  padding: 20px 25px;
+}
+.review .container article img:nth-of-type(2) {
+  display: flex;
+  padding: 20px 0 10px;
+}
+.review .more button {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.review .more button:hover,
+.review .go a:hover {
+  opacity: 0.7;
+}
+.review .more button:first-of-type {
+  right: 100%;
+}
+
+/*프로모션 비디오*/
+.video article {
+  display: flex;
+  justify-content: center;
+}
+.video h2 span {
+  color: #000;
+}
+.video article div {
+  padding: 59px 30px 76px;
+  margin-left: 16px;
+}
+.video article div:first-of-type {
+  margin-left: 0;
+}
+.video video:hover {
+  opacity: 0.7;
+}
